@@ -1,7 +1,7 @@
 /* ==========================================================================
    VARIÁVEIS DE COR
    Usar variáveis CSS (custom properties) em vez de escrever a cor direto
-   em cada regra permite trocar a paleta inteira mudando só o :root,
+   em cada regra permite trocar a paleta inteira mudando só o git add .,
    sem precisar caçar cada ocorrência da cor pelo arquivo.
    ========================================================================== */
 :root {
@@ -281,6 +281,63 @@ button:focus-visible {
 .section h2 {
   font-size: 2rem;
   font-weight: 700;
+}
+
+/* ==========================================================================
+   SOBRE MIM
+   ========================================================================== */
+.sobre-texto {
+  /* max-width em ch limita a linha a ~65 caracteres, largura confortável
+     de leitura, independente do tamanho da tela */
+  max-width: 65ch;
+  margin-top: 1.5rem;
+  line-height: 1.8;
+  color: var(--color-text);
+}
+
+.sobre-destaque {
+  max-width: 65ch;
+  margin-top: 2rem;
+  padding-left: 1rem;
+  border-left: 3px solid var(--color-accent);
+  color: var(--color-text-muted);
+  font-size: 1rem;
+}
+
+/* ==========================================================================
+   HABILIDADES
+   ========================================================================== */
+.skills-grid {
+  /* auto-fit + minmax(18rem, 1fr): o navegador calcula quantas colunas de
+     no mínimo 18rem cabem na largura disponível, sem precisar de media
+     query — 3 colunas no desktop, 2 no tablet, 1 no celular, sozinho */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.skill-card {
+  background-color: var(--color-bg-alt);
+  border: 1px solid var(--color-border);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  transition: border-color 0.2s ease;
+}
+
+.skill-card:hover {
+  border-color: var(--color-accent);
+}
+
+.skill-card__nome {
+  font-size: 1.1rem;
+  color: var(--color-accent);
+  margin-bottom: 0.5rem;
+}
+
+.skill-card__descricao {
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
 }
 
 /* ==========================================================================
