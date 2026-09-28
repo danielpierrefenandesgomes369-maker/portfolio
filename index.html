@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pierre | Estudante de Engenharia de Software</title>
+  <meta name="description" content="Portfólio de Daniel Pierre Fernandes Gomes, estudante de Engenharia de Software em busca de estágio na área de Operações e TI.">
+
+  <!-- Fonte Arimo via Google Fonts, com pesos 400 (normal) e 700 (negrito) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <nav class="navbar container">
+      <a href="#inicio" class="navbar__brand">Pierre</a>
+
+      <!-- Botão hambúrguer: só aparece no mobile (via CSS). aria-expanded é atualizado pelo JS -->
+      <button
+        class="navbar__toggle"
+        id="navToggle"
+        aria-label="Abrir menu de navegação"
+        aria-expanded="false"
+        aria-controls="navMenu"
+      >
+        <span class="navbar__toggle-icon"></span>
+      </button>
+
+      <ul class="navbar__menu" id="navMenu">
+        <li><a href="#inicio" class="navbar__link">Início</a></li>
+        <li><a href="#sobre" class="navbar__link">Sobre</a></li>
+        <li><a href="#skills" class="navbar__link">Habilidades</a></li>
+        <li><a href="#projetos" class="navbar__link">Projetos</a></li>
+        <li><a href="#formacao" class="navbar__link">Formação</a></li>
+        <li><a href="#contato" class="navbar__link">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO: única seção com conteúdo neste sprint -->
+    <section id="inicio" class="hero">
+      <div class="container hero__container">
+        <img
+          src="assets/pierre.jpg"
+          alt="Foto de Pierre, sorrindo, de braços cruzados"
+          class="hero__photo"
+        >
+
+        <div class="hero__content">
+          <h1 class="hero__title">Pierre</h1>
+          <p class="hero__subtitle">Estudante de Engenharia de Software</p>
+          <p class="hero__objective">Em busca de estágio na área de Operações e TI.</p>
+
+          <div class="hero__actions">
+            <a href="#contato" class="btn btn--primary">Entrar em contato</a>
+            <a href="#projetos" class="btn btn--secondary">Ver projetos</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre" class="section">
+      <div class="container">
+        <h2>Sobre mim</h2>
+        <!-- Conteúdo desta seção será preenchido no Sprint 2 -->
+      </div>
+    </section>
+
+    <section id="skills" class="section section--alt">
+      <div class="container">
+        <h2>Habilidades</h2>
+        <!-- Conteúdo desta seção será preenchido no Sprint 3 -->
+      </div>
+    </section>
+
+    <section id="projetos" class="section">
+      <div class="container">
+        <h2>Projetos</h2>
+        <!-- Conteúdo desta seção será preenchido no Sprint 4 -->
+      </div>
+    </section>
+
+    <section id="formacao" class="section section--alt">
+      <div class="container">
+        <h2>Formação e certificações</h2>
+        <!-- Conteúdo desta seção será preenchido no Sprint 5 -->
+      </div>
+    </section>
+
+    <section id="contato" class="section">
+      <div class="container">
+        <h2>Contato</h2>
+        <!-- Conteúdo desta seção será preenchido no Sprint 6 -->
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>Pierre</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
