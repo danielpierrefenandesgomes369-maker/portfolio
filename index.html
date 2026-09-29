@@ -113,9 +113,112 @@
     <section id="projetos" class="section section--alt">
       <div class="container">
         <h2>Projetos</h2>
-        <!-- Conteúdo desta seção será preenchido no Sprint 4 -->
+
+        <ul class="projetos-grid">
+          <li class="projeto-card">
+            <div class="projeto-card__body">
+              <h3 class="projeto-card__titulo">Simulação de Gestão Escolar</h3>
+              <p class="projeto-card__descricao">Programa em Python que calcula a média e a frequência de alunos e informa o resultado final.</p>
+
+              <ul class="projeto-card__tags">
+                <li class="projeto-card__tag">Python</li>
+              </ul>
+
+              <button type="button" class="btn btn--secondary" data-modal="modal-gestao-escolar">Ver detalhes</button>
+            </div>
+          </li>
+
+          <li class="projeto-card">
+            <img
+              src="assets/american-news.png"
+              alt="Captura de tela da página inicial do site da American News Informática"
+              class="projeto-card__imagem"
+              loading="lazy"
+            >
+
+            <div class="projeto-card__body">
+              <h3 class="projeto-card__titulo">American News Informática</h3>
+              <p class="projeto-card__descricao">Site institucional da unidade Vila Lobão, em Imperatriz-MA, feito em HTML, CSS e JavaScript.</p>
+
+              <ul class="projeto-card__tags">
+                <li class="projeto-card__tag">HTML</li>
+                <li class="projeto-card__tag">CSS</li>
+                <li class="projeto-card__tag">JavaScript</li>
+              </ul>
+
+              <button type="button" class="btn btn--secondary" data-modal="modal-american-news">Ver detalhes</button>
+            </div>
+          </li>
+        </ul>
       </div>
     </section>
+
+    <!-- <dialog> é o elemento nativo de modal do HTML: já cuida de bloquear
+         a interação com o resto da página, fechar com Esc e focar o
+         conteúdo. Por isso não usamos divs com z-index para simular isso. -->
+    <dialog id="modal-gestao-escolar" class="modal">
+      <div class="modal__conteudo">
+        <h3 class="modal__titulo">Simulação de Gestão Escolar</h3>
+
+        <p class="modal__texto">Projeto em Python que simula uma rotina de gestão escolar. O programa calcula a média das notas e a frequência de cada aluno e informa se ele foi aprovado, ficou de recuperação ou foi reprovado, indicando o motivo do resultado.</p>
+
+        <h4 class="modal__subtitulo">O que pratiquei</h4>
+        <p class="modal__texto">Estruturas condicionais (if, elif e else) e estruturas de repetição (for).</p>
+
+        <ul class="projeto-card__tags">
+          <li class="projeto-card__tag">Python</li>
+        </ul>
+
+        <div class="modal__acoes">
+          <a
+            href="https://github.com/danielpierrefenandesgomes369-maker/simulacao-gestao-escolar"
+            class="btn btn--primary"
+            target="_blank"
+            rel="noopener noreferrer"
+          >Ver repositório no GitHub</a>
+
+          <button type="button" class="btn btn--secondary modal__fechar" aria-label="Fechar janela do projeto">Fechar</button>
+        </div>
+      </div>
+    </dialog>
+
+    <dialog id="modal-american-news" class="modal">
+      <div class="modal__conteudo">
+        <h3 class="modal__titulo">American News Informática</h3>
+
+        <p class="modal__texto">Site institucional da American News Informática, unidade Vila Lobão, em Imperatriz-MA, feito em HTML, CSS e JavaScript.</p>
+
+        <h4 class="modal__subtitulo">Meu papel</h4>
+        <p class="modal__texto">Forneci as informações do estabelecimento, participei da definição de como o site ficaria e revisei o site pronto.</p>
+
+        <h4 class="modal__subtitulo">Desenvolvimento</h4>
+        <p class="modal__texto">Código desenvolvido por Vítor Barbosa.</p>
+
+        <ul class="projeto-card__tags">
+          <li class="projeto-card__tag">HTML</li>
+          <li class="projeto-card__tag">CSS</li>
+          <li class="projeto-card__tag">JavaScript</li>
+        </ul>
+
+        <div class="modal__acoes">
+          <a
+            href="https://american-news-vila-lobao.vercel.app/"
+            class="btn btn--primary"
+            target="_blank"
+            rel="noopener noreferrer"
+          >Ver site</a>
+
+          <a
+            href="https://github.com/danielpierrefenandesgomes369-maker/american-news-vila-lobao"
+            class="btn btn--primary"
+            target="_blank"
+            rel="noopener noreferrer"
+          >Ver repositório no GitHub</a>
+
+          <button type="button" class="btn btn--secondary modal__fechar" aria-label="Fechar janela do projeto">Fechar</button>
+        </div>
+      </div>
+    </dialog>
 
     <section id="formacao" class="section">
       <div class="container">
