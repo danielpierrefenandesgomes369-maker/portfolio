@@ -286,7 +286,7 @@ button:focus-visible {
 /* ==========================================================================
    SOBRE MIM
    ========================================================================== */
-.sobre-texto {
+.sobre__texto {
   /* max-width em ch limita a linha a ~65 caracteres, largura confortável
      de leitura, independente do tamanho da tela */
   max-width: 65ch;
@@ -295,7 +295,7 @@ button:focus-visible {
   color: var(--color-text);
 }
 
-.sobre-destaque {
+.sobre__destaque {
   max-width: 65ch;
   margin-top: 2rem;
   padding-left: 1rem;
@@ -338,6 +338,56 @@ button:focus-visible {
 .skill-card__descricao {
   font-size: 0.95rem;
   color: var(--color-text-muted);
+}
+
+/* ==========================================================================
+   FORMAÇÃO E CERTIFICAÇÕES
+   ========================================================================== */
+.formacao__bloco {
+  /* margin-top em ambos os blocos garante pelo menos 2.5rem de respiro
+     tanto abaixo do h2 quanto entre os dois blocos */
+  margin-top: 2.5rem;
+}
+
+.formacao__subtitulo {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+/* .formacao-card é reaproveitado tanto no card único de formação acadêmica
+   quanto nos itens da lista de cursos, para manter o mesmo visual */
+.formacao-card {
+  background-color: var(--color-bg-alt);
+  border: 1px solid var(--color-border);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  transition: border-color 0.2s ease;
+}
+
+.formacao-card:hover {
+  border-color: var(--color-accent);
+}
+
+.formacao-card--destaque {
+  border-left: 3px solid var(--color-accent);
+}
+
+.formacao-card__titulo {
+  font-size: 1.1rem;
+  color: var(--color-accent);
+}
+
+.formacao-card__descricao {
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+  margin-top: 0.5rem;
+}
+
+.formacao-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  gap: 1.5rem;
 }
 
 /* ==========================================================================
